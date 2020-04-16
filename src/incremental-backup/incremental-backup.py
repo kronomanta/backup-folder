@@ -21,16 +21,11 @@ if __name__ == '__main__':
     
     if not os.path.exists(destination_folder):
       os.makedirs(destination_folder)
-      
-    actual_destination_version_folder = os.path.join(destination_folder, date_postfix)
-    print("Creating destination directory: " + actual_destination_version_folder)
     
     log_folder = os.path.join(destination_folder, "logs")
     if not os.path.exists(log_folder):
       os.makedirs(log_folder)
     log_file = os.path.join(log_folder, date_postfix)
-    
-    #os.makedirs(actual_destination_version_folder)
     
     #get all existing folder containing older versions
     all_versions = []

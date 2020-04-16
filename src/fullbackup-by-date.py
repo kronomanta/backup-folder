@@ -1,4 +1,3 @@
-backup-local-folder.py
 import argparse
 from datetime import datetime
 import os

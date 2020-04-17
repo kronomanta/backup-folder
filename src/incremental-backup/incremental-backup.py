@@ -74,7 +74,9 @@ if __name__ == '__main__':
     
     
     print('### Finished successfully ###')	
-  except OSError as e:
+    
+  except: # catch *all* exceptions
+    e = sys.exc_info()[0]
     print('### ERROR ###')
     print('Directory not copied. Error: %s' % e)
     sys.exit(1)

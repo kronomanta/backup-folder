@@ -5,6 +5,11 @@ import shutil
 import traceback
 import sys
 
+__version_info__ = (1, 0, 0)
+__version__ = '.'.join(str(c) for c in __version_info__)
+
+
+
 class BackupManager:
   def __init__(self, args):
     self.rotation = args.rotation

@@ -10,4 +10,4 @@ python3 -u incremental-backup.py -s a/source -t a/target -r 4
 
 # Requirements
 
-Rsync has to be installed and runnable using only its name
+Rsync and Python 3.x have to be installed and runnable using only their names.
